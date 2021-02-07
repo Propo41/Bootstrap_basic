@@ -1,0 +1,175 @@
+:root {
+  /*
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+  custom constants
+  */
+  --color-blue: #54BCE7;
+  --color-ash: #F2F2F2;
+  --color-dark-ash: #1F232C;
+}
+
+.bold-font {
+  font-weight: 800;
+}
+
+.nav-item {
+  padding: 10px;
+  font-size: 0.9em;
+  font-weight: 800;
+}
+
+.title-text {
+  padding: 20px;
+  text-align: center;
+}
+
+.header-img {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.banner-header {
+  font-size: 2.5em;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.banner-footer {
+  font-weight: 800;
+  font-size: 3em;
+}
+
+.first-img {
+  object-fit: cover;
+  height: 700px;
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+#section-1{
+  background-color: black;
+  padding: 50px;
+}
+
+
+.section-1-div {
+  text-align: center;
+}
+
+.section-1-div-header {
+  font-weight: 400;
+  color: var(--color-blue);
+  font-family: Montserrat, sans-serif;
+}
+
+.section-1-div-body {
+  font-weight: 100;
+  color: white;
+  font-family: Montserrat;
+}
+
+#section-2{
+  background-color: var(--color-ash);
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+
+}
+
+.section-2-circle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  left: 50%;
+  margin-left: -30px;
+  top: -30px;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.section-2-rectangle {
+  display: block;
+  background: white;
+  position: relative;
+  padding-top: 15px;
+  padding: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 250px;
+  /* box-shadow: 5px 5px 20px #888888; */
+}
+
+.section-2-content {
+  margin-top: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+#section-3 {
+  background-color: var(--color-blue);
+  padding: 30px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+.section-3-box {
+  height: 350px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.section-3-box-1 {
+  padding: 30px;
+  border-color: white;
+  border-width: medium;
+  border-style: solid;
+}
+
+.section-3-img-box {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#section-4{
+  background-color: var(--color-ash);
+  padding: 100px;
+
+}
+
+.section-4-header{
+  text-align: center;
+  padding: 20px;
+}
+
+.section-4-box-body{
+  text-align: center;
+  padding: 50px;
+  flex: 1 1 auto;
+}
+
+#section-5{
+  background-color: var(--color-dark-ash);
+  padding: 40px;
+  color: white;
+
+}

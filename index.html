@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<!-- @PROBLEMS:
+1. In section 2, the rectangles are all hardcoded. Is there any way to make them dynamic? so that no matter the size of texts
+   it will all be the same height -->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- custom CSS styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- Montserrat font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;800;900&display=swap" rel="stylesheet">
+
+  <title>Assignment 2</title>
+</head>
+
+<body style="font-family: Montserrat;">
+
+  <!-- header -->
+  <div>
+    <h1 class="title-text">AUST CSE</h1>
+  </div>
+  <!-- nav bar -->
+  <nav class="navbar navbar-light navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+     aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">HOMEPAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">BOARD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">CONTACTS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- banner: 1st image -->
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active first-img-div">
+        <img class="first-img" src="img/banner.jpg" alt="First slide">
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+      <!-- 1st image floating text-->
+      <div class="centered">
+        <h1 class="banner-header">Ahsanullah University of Science & Technology</h1>
+        <h1 class="banner-footer">CSE 3.1</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- section - 1 -->
+  <section id="section-1">
+    <div class="row section-1">
+      <div class="col-md-4">
+        <div class="section-1-div">
+          <h5 class="section-1-div-header">
+            CALL US 24/7
+          </h5>
+          <h4 class="section-1-div-body">
+            +123-456-7890
+          </h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section-1-div">
+          <h5 class="section-1-div-header">
+            EMAIL ADDRESS
+          </h5>
+          <h4 class="section-1-div-body">
+            example@example.com
+          </h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="section-1-div">
+          <h5 class="section-1-div-header">
+            OPEN HOURS
+          </h5>
+          <h4 class="section-1-div-body">
+            Daily 9:00-20:00
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section - 2 -->
+  <!-- https://stackoverflow.com/questions/33706736/circle-over-a-rectangle-using-css -->
+  <section id="section-2">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="section-2-rectangle d-flex flex-column justify-content-center align-items-center">
+          <div class="section-2-circle">
+            <img src="img/icon1.png" alt="lock icon" />
+          </div>
+          <div class="section-2-content">
+            <p class="bold-font">Highly Secure</p>
+            <p>Cloud based services can offer our customers single tenant dedicated environments</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="section-2-rectangle d-flex flex-column justify-content-center align-items-center">
+          <div class="section-2-circle">
+            <img src="img/icon1.png" alt="lock icon" />
+          </div>
+          <div class="section-2-content">
+            <p class="bold-font">True Cloud Scale</p>
+            <p>Working with customers making 100-40,000 hires per annum</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="section-2-rectangle d-flex flex-column justify-content-center align-items-center">
+          <div class="section-2-circle">
+            <img src="img/icon1.png" alt="lock icon" />
+          </div>
+          <div class="section-2-content">
+            <p class="bold-font">Accurate Data</p>
+            <p>All of our customers data is validated. We build accurate data banks for reporting</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section - 3 -->
+  <section id="section-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="section-3-box section-3-box-1 d-flex flex-column justify-content-center align-items-center" style="margin-bottom:25px; padding:25px">
+            <h6 class="bold-font" style="margin-bottom:30px; font-size:1.3em">About Us</h6>
+            <p>Good content is everything. In a world that is oversaturated with
+              content, you'll learn from successful writers and bloggers
+              how to create content that matters and resonated with your audience</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="section-3-box" style="margin-bottom:25px">
+            <img src="img/grid3.jpg" class="section-3-img-box" alt="grid 3" />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="section-3-box section-3-box-1 d-flex flex-column justify-content-center align-items-center" style="margin-bottom:25px; padding:25px">
+            <h6 class="bold-font" style="margin-bottom:30px; font-size:1.3em">Our Strategy</h6>
+            <p>Good content is everything. In a world that is oversaturated with
+              content, you'll learn from successful writers and bloggers
+              how to create content that matters and resonated with your audience</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="section-3-box" style="margin-bottom:25px">
+            <img src="img/grid2.jpg" class="section-3-img-box" alt="grid 3" />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="section-3-box d-flex flex-column justify-content-center align-items-center" style="background-color: var(--color-dark-ash); padding:25px; margin-bottom:25px">
+            <h6 class="bold-font" style="margin-bottom:30px; font-size:1.3em">Our Mission</h6>
+            <p>Good content is everything. In a world that is oversaturated with
+              content, you'll learn from successful writers and bloggers
+              how to create content that matters and resonated with your audience</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="section-3-box" style="margin-bottom:25px">
+            <img src="img/grid1.jpg" class="section-3-img-box" alt="grid 3" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section - 4 -->
+  <!-- used card-group -->
+  <section id="section-4">
+    <div class="section-4-header">
+      <h5>OUR</h5>
+      <h2 class="bold-font">BLOG POSTS</h2>
+    </div>
+
+    <div class="row">
+      <div class="card-group">
+        <!-- col 1 -->
+        <div class="card col-md-4" style="margin-right:20px">
+          <img src="img/blog1.jpg" class="card-img-top" alt="man sitting">
+          <div class="section-4-box-body">
+            <h5 class="card-title bold-font">Getting More For Your Money</h5>
+            <p class="card-text">The majority of businesses will have a degree
+              of relaince on recruitment suppliers..</p>
+          </div>
+          <ul class="list-group list-group-horizontal-lg">
+            <li class="list-group-item flex-fill text-center d-flex flex-column justify-content-center align-items-center" style="padding:20px">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="img/icon4.png" alt="user" width="30px" height="30px" />
+                <p style="font-size:0.7em; font-weight:600; margin-bottom:0px"> Emma </p>
+              </div>
+            </li>
+            <li class="list-group-item flex-fill text-center d-flex flex-column justify-content-center align-items-center" style="padding:20px">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="img/icon5.png" alt="user" width="30px" height="30px" />
+                <p style="font-size:0.7em; font-weight:600; margin-bottom:0px"> AUGUST 6, 2017 </p>
+              </div>
+            </li>
+            <li class="list-group-item flex-fill text-center d-flex flex-column justify-content-center align-items-center" style="padding:20px">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="img/icon6.png" alt="user" width="30px" height="30px" />
+                <p style="font-size:0.7em; font-weight:600; margin-bottom:0px"> NEWS </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- col 2 -->
+        <div class="card col-md-4" style="margin-right:20px">
+          <img src="img/blog2.jpg" class="card-img-top" alt="man sitting">
+          <div class="section-4-box-body">
+            <h5 class="card-title bold-font">Post With Youtube Vide</h5>
+            <p class="card-text">Ribeye cupim jerky ham. Fatback sausage
+              shoulder, bresaola boudin hamburger pork turkey</p>
+          </div>
+          <ul class="list-group list-group-horizontal-lg">
+            <li class="list-group-item flex-fill text-center d-flex flex-column justify-content-center align-items-center" style="padding:20px">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="img/icon4.png" alt="user" width="30px" height="30px" />
+                <p style="font-size:0.7em; font-weight:600; margin-bottom:0px"> Emma </p>
+              </div>
+            </li>
+            <li class="list-group-item flex-fill text-center d-flex flex-column justify-content-center align-items-center" style="padding:20px">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="img/icon5.png" alt="user" width="30px" height="30px" />
+                <p style="font-size:0.7em; font-weight:600; margin-bottom:0px"> JUNE 10,2017 </p>
+              </div>
+            </li>
+            <li class="list-group-item flex-fill text-center d-flex flex-column justify-content-center align-items-center" style="padding:20px">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="img/icon6.png" alt="user" width="30px" height="30px" />
+                <p style="font-size:0.7em; font-weight:600; margin-bottom:0px"> POST </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- col 3 -->
+        <div class="card col-md-4">
+          <img src="img/blog3.jpg" class="card-img-top" alt="man sitting">
+          <div class="section-4-box-body">
+            <h5 class="card-title bold-font">Post format: Image</h5>
+            <p class="card-text">Beef beef ribs pancetta sirloin tail brisket strip chuck swine franfurter ham hock kielbasa</p>
+          </div>
+          <ul class="list-group list-group-horizontal-lg">
+            <li class="list-group-item flex-fill text-center d-flex flex-column justify-content-center align-items-center" style="padding:20px">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="img/icon4.png" alt="user" width="30px" height="30px" />
+                <p style="font-size:0.7em; font-weight:600; margin-bottom:0px"> Emma </p>
+              </div>
+            </li>
+            <li class="list-group-item flex-fill text-center d-flex flex-column justify-content-center align-items-center" style="padding:20px">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="img/icon5.png" alt="user" width="30px" height="30px" />
+                <p style="font-size:0.7em; font-weight:600; margin-bottom:0px"> JUNE 8,2017 </p>
+              </div>
+            </li>
+            <li class="list-group-item flex-fill text-center d-flex flex-column justify-content-center align-items-center" style="padding:20px">
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <img src="img/icon6.png" alt="user" width="30px" height="30px" />
+                <p style="font-size:0.7em; font-weight:600; margin-bottom:0px"> POST </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="section-5">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <h5 style="font-size: 0.8em">© Copyright 2021. All Rights Reserved</h5>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
